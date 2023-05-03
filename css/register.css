@@ -1,13 +1,25 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: #1a0321;
-    font-family: consolas;
+    background-image: url(/img/register\ hd.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
 
+h5{
+    color:#fff;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;   
+    text-align:justify;
+    text-shadow: 1px 1px black;
+    margin-left: 50px;
+    
 }
 
 #formulario{
@@ -39,26 +51,18 @@ body{
     margin-bottom: 600px;
     margin-right: 600px;
     box-shadow: 1px 0px 500px 200px rgb(190, 123, 15);
+    display: flex;
        
 }
 
 .borde:hover{
     opacity: 0.9;
-}
-
-#imagen{
-    background-image: url(/img/register\ hd.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
+    box-shadow: 10px 100px 500px 200px rgb(190, 123, 15);
 }
 
 .login{
     color: #3ecc02fe;
     font-weight: bold;
-
 }
 
 
@@ -86,7 +90,18 @@ body{
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
+    animation: mymove 1s infinite; 
+    
 }
+
+@keyframes mymove {
+    /* 1% {color: white} */
+    30% {color: rgb(207, 2, 2)}
+    50% {color: rgb(255, 136, 0);}
+    70% {color: green}
+    80% {color: rgb(246, 255, 0);}
+    /* 100% {color: black} */
+  }
 
 .btn-neon:hover{
     background: #e4421d;
