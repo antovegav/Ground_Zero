@@ -1,0 +1,8 @@
+body{
+    background-image: url(/img/background_index.jpg);
+}
+
+#linkCabecera{
+    color: #fff;
+    margin-left: 40px;
+}
