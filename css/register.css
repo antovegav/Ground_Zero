@@ -1,3 +1,8 @@
+header{
+    position:absolute;
+    margin-bottom: 1770px;
+}
+
 body{
     margin: auto;
     padding: auto;
@@ -22,18 +27,7 @@ h5{
     
 }
 
-#formulario{
-    color:#fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    margin-right: 25px;
-    font-family: serif;   
-}
-
+/* ANIMACION DE REGISTER */
 #ingresos{
     display: flex;
     justify-content: center center;
@@ -43,6 +37,7 @@ h5{
     margin-right: 25px;
     color: black;
     text-decoration: none;
+    
 }
 
 .borde{
@@ -50,30 +45,22 @@ h5{
     margin-left: 600px;
     margin-bottom: 600px;
     margin-right: 600px;
-    box-shadow: 1px 0px 500px 200px rgb(190, 123, 15);
+    padding: 100px;
+    box-shadow: 10px 100px 500px 200px rgb(190, 123, 15);
     display: flex;
-       
+    
 }
 
 .borde:hover{
     opacity: 0.9;
     box-shadow: 10px 100px 500px 200px rgb(190, 123, 15);
+    
 }
 
 .login{
     color: #3ecc02fe;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ANIMACION DE BOTON */
 .btn-neon{
