@@ -6,3 +6,8 @@ body{
     color: #fff;
     margin-left: 40px;
 }
+
+.card{
+    background: transparent;
+    color: #fff;
+}
