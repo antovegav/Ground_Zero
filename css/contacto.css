@@ -1,0 +1,22 @@
+body{
+    background-image: url(/img/background_contactoGeneral.png);
+    background-position: top;
+}
+
+#linkCabecera{
+    color: #fff;
+    margin-left: 40px;
+}
+
+.formulario{
+    
+    position: fixed;
+    left: 10%;
+    top: 60px;
+    color: #fff;
+    text-shadow: black;
+    text-align: center;
+    /* height: 500px;
+    width: 1000px; */
+    /* background-color: blue; */
+}
