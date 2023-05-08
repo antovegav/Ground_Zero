@@ -1,5 +1,7 @@
 body{
     background-image: url(/img/background_index.jpg);
+    background-repeat:repeat;
+    background-attachment: scroll;
 }
 
 #linkCabecera{
@@ -10,4 +12,5 @@ body{
 .card{
     background: transparent;
     color: #fff;
+    
 }

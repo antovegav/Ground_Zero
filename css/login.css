@@ -1,66 +1,24 @@
-#imagen{
-    background-image: url(/img/register\ hd.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-}
-
-h5{
-    color: aliceblue;
-}
-
 body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #1a0321;
-    font-family: consolas;
-
+    background-image: url(/img/background_login.png);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
 }
 
-
-#formulario{
-    color:#fff;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    margin-right: 25px;
-    font-family: serif;   
+#linkCabecera{
+    color: #fff;
+    margin-left: 40px;
 }
+
 .borde{
-    margin-top: 600px;
-    margin-left: 600px;
-    margin-bottom: 600px;
-    margin-right: 600px;
-    box-shadow: 1px 0px 500px 200px rgb(190, 123, 15);
-       
+    padding: auto;
+    margin: 10%;
+    color: #fff;
+    text-align: center; 
 }
 
-.borde:hover{
-    opacity: 0.9;
-}
-.ingresos{
-    
-    justify-content: center center;
-    margin-top: 25px;
-    margin-left: 600px;
-    margin-bottom: 25px;
-    margin-right: 60px;
-    color: white;
-    text-decoration: none;
-}
+
+/* ANIMACION DE BOTON */
 .btn-neon{
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 0px;
-    margin-right: 250px;
     position:sticky;
     display: inline-block;
     padding: 5px 20px;
@@ -70,7 +28,18 @@ body{
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
+    animation: mymove 1s infinite; 
+    
 }
+
+@keyframes mymove {
+    /* 1% {color: white} */
+    30% {color: rgb(207, 2, 2)}
+    50% {color: rgb(255, 136, 0);}
+    70% {color: green}
+    80% {color: rgb(246, 255, 0);}
+    /* 100% {color: black} */
+  }
 
 .btn-neon:hover{
     background: #e4421d;

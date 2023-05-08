@@ -1,6 +1,8 @@
 body{
     background-image: url(/img/background_contactoGeneral.png);
-    background-position: top;
+    background-repeat: repeat-x;
+    background-position: center;
+    
 }
 
 #linkCabecera{
@@ -9,14 +11,8 @@ body{
 }
 
 .formulario{
-    
-    position: fixed;
-    left: 10%;
-    top: 60px;
+    padding: auto;
+    margin: 10%;
     color: #fff;
-    text-shadow: black;
-    text-align: center;
-    /* height: 500px;
-    width: 1000px; */
-    /* background-color: blue; */
+    text-align: center; 
 }

@@ -1,0 +1,17 @@
+body{
+    background-image: url(/img/background_publicacion.png);
+    background-position: center;
+    background-attachment: scroll;
+}
+
+#linkCabecera{
+    color: #fff;
+    margin-left: 40px;
+}
+
+.formulario{
+    padding: auto;
+    margin: 10%;
+    color: #fff;
+    text-align: center; 
+}
