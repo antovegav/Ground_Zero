@@ -1,7 +1,7 @@
 body{
     background-image: url(/img/background_index.jpg);
     background-repeat:repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 #linkCabecera{
@@ -11,6 +11,22 @@ body{
 
 .card{
     background: transparent;
-    color: #fff;
-    
+    color: #fff; 
+}
+
+a{
+    height: 40px;
+}
+
+#card1:hover,#card2:hover,#card3:hover,#card4:hover,#card5:hover,#card6:hover{
+    opacity: 0.8;
+    background-color: black;
+}
+
+.card-group a{
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    align-self: center;
+    position: absolute;
 }
