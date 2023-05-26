@@ -1,14 +1,29 @@
+
 body{
     background-image: url(/img/background_index.jpg);
     background-repeat:repeat;
     background-attachment: fixed;
 }
+/* CABECERA */
+.division-header{
+    margin: 80px 0px 0px 0px;
+}
+
+.navbar{
+    background-color: #fff;
+}
 
 #linkCabecera{
-    color: #fff;
+    color: #000000;
     margin-left: 40px;
 }
 
+/* CAROUSEL */
+.carousel{
+    margin: 0px 50px 0px 50px;
+}
+
+/* CARTAS */
 .card{
     background: transparent;
     color: #fff; 

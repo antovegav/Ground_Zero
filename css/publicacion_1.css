@@ -1,0 +1,23 @@
+body{
+    background-image: url(/img/background_publicacion.png);
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.division-header{
+    margin: 80px 0px 0px 0px;
+}
+
+.navbar{
+    background-color: #fff;
+}
+
+h2{
+    text-align: center;
+}
+
+button .compra:hover{
+    background-color:#f0f40e;
+}
+
