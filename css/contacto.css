@@ -2,14 +2,23 @@ body{
     background-image: url(/img/background_contactoGeneral.png);
     background-repeat: repeat-x;
     background-position: center;
+    background-attachment: fixed;
     
 }
 
-#linkCabecera{
-    color: #fff;
-    margin-left: 40px;
+/* CABECERA */
+.division-header{
+    margin: 80px 0px 0px 0px;
 }
 
+.navbar{
+    background-color: #fff;
+}
+
+#linkCabecera{
+    color: #000000;
+    margin-left: 40px;
+}
 .formulario{
     padding: auto;
     margin: 10%;

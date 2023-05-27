@@ -1,21 +1,73 @@
 body{
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(/img/background_login.png);
-    background-repeat: repeat-y;
-    background-attachment: scroll;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h5{
+    color:#fff;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;   
+    text-align:justify;
+    text-shadow: 1px 1px black;
+    margin-left: 50px;
+    
+}
+
+/* CABECERA */
+.division-header{
+    margin: 80px 0px 0px 0px;
+}
+
+.navbar{
+    background-color: #fff;
 }
 
 #linkCabecera{
-    color: #fff;
+    color: #000000;
     margin-left: 40px;
 }
 
-.borde{
-    padding: auto;
-    margin: 10%;
-    color: #fff;
-    text-align: center; 
+/* ANIMACION DE REGISTER */
+#ingresos{
+    display: flex;
+    justify-content: center center;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    color: black;
+    text-decoration: none;
+    
 }
 
+.borde{
+    margin-top: 60px;
+    margin-left: 600px;
+    margin-bottom: 0px;
+    margin-right: 600px;
+    padding: 100px;
+    display: flex;
+    
+}
+
+.borde:hover{
+    box-shadow: 10px 500px 500px 200px rgb(232, 243, 186);
+}
+
+
+.login{
+    color: #3ecc02fe;
+    font-weight: bold;
+}
 
 /* ANIMACION DE BOTON */
 .btn-neon{
