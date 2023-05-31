@@ -45,3 +45,12 @@ a{
     align-self: center;
     position: absolute;
 }
+
+footer{
+    background-color: #212529;
+    height: 10%;
+    color: #f4b30e;
+}
+p{
+    font-family: 'Assistant', sans-serif;
+}

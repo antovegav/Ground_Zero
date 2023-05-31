@@ -3,7 +3,6 @@ body{
     padding: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-image: url(/img/background_login.png);
     background-repeat: repeat-x;
     background-attachment: fixed;
@@ -35,6 +34,7 @@ h5{
     color: #000000;
     margin-left: 40px;
 }
+
 
 /* ANIMACION DE REGISTER V.1*/
 /* #ingresos{
@@ -72,6 +72,7 @@ h5{
 /* FORMULARIO V.3 */
 
 #container{
+    align-items: center;
     background: blur;
     color: #fff;
     border-radius: 10px;
@@ -129,6 +130,17 @@ h5{
     
 }
 
+footer{
+    width: 100%;
+    top: 675px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.725);
+    height: 28%;
+    color: #f4b30e;
+}
+p{
+    font-family: 'Assistant', sans-serif;
+}
 
 /* ANIMACION DE BOTON */
 /* .btn-neon{

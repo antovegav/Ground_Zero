@@ -3,7 +3,6 @@ body{
     padding: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-image: url(/img/background_login.png);
     background-repeat: repeat-x;
     background-attachment: fixed;
@@ -127,6 +126,19 @@ h5{
     color: #ff0000fe;
     font-weight: bold;
     
+}
+
+
+footer{
+    width: 100%;
+    top: 675px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.725);
+    height: 28%;
+    color: #f4b30e;
+}
+p{
+    font-family: 'Assistant', sans-serif;
 }
 
 

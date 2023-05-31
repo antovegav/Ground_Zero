@@ -57,9 +57,28 @@
                 <li><a class="dropdown-item" href="publicacion.html"><i class="fa-solid fa-share-from-square" style="color: #000000;"></i> Publicar</a></li>
               </ul>
             </div>
+            <!-- CARRITO -->
+            <div >
+              <button id="btn-carrito">
+                <ul id="carrito-productos"></ul>
+                <i class="fas fa-shopping-cart"></i>
+                <span id="carrito-count">0</span>
+              </button>
+            </div>
         </div>
       </nav>
     </header>
+
+    <!-- Ventana emergente -->
+<div id="carrito-modal" class="modal" style="color:black;">
+  <div class="modal-content">
+    <span class="close">X</span>
+    <h2>Carrito de compras</h2>
+    <ul id="carrito-productos"></ul>
+    <p>Total: <span id="total"></span></p>
+  </div>
+</div>
+
     <!-- DIVISOR DE CONTENIDO -->
    <div class="division-header"></div>
    <h2 class="p-5" style="color:#fff;text-align: center;">DESTACADAS</h2>
@@ -106,115 +125,190 @@
       </div>
     </section>
 
-   <!-- DIVISOR DE CONTENIDO -->
+   <!-- GALERIA -->
    <h2 class="p-5" style="color:#fff;text-align: center;">GALERIA</h2>
     
-    <!-- GALERIA -->
-    <section>
-      <div class="card-group">
-        <div class="card" style="width:400px" id="card1">
-          <a href="publicacion_1.html"></a>
-          <img class="card-img-top" src="img/carousel 1.png" alt="Card image" style="width:100%" width="400" height="300" >
-          <div class="card-body">
-            <h4 class="card-title">Gato 17</h4>
-            <p class="card-text">
-              Artista: RaziellArtt <br>
-              Arte: Digital <br>
-              <br>
-            </p>
 
-            <div class="card-footer">
-              <small class="text-body-white">Publicado hace 3 minutos</small><br>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width:400px;" id="card2">
-          <a href="publicacion_2.html"></a>
-          <img class="card-img-top" src="img/carousel 2.jpg" alt="Card image" style="width:100%" width="400" height="300" >
-          <div class="card-body">
-            <h4 class="card-title">Water0</h4>
-            <p class="card-text">
-              Artista: Josefele77 <br>
-              Arte: Tradicional <br>
-              Tecnica: Oil Paint
-            </p>
-            <div class="card-footer">
-              <small class="text-body-white">Publicado hace 30 minutos</small>
-              
-            </div>
-          </div>
-        </div><div class="card" style="width:400px" id="card3">
-          <a href="publicacion_3.html"></a>
-          <img class="card-img-top" src="img/carousel 3.jpg" alt="Card image" style="width:100%" width="400" height="300" >
-          <div class="card-body">
-            <h4 class="card-title">Twinsies</h4>
-            <p class="card-text">
-              Artista: Evwin7565 <br>
-              Arte: Crochet <br>
-              Tecnica: Amigurumi
-            </p>
-            <div class="card-footer">
-              <small class="text-body-white">Publicado hace 1 hora</small>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <section>
-      <div class="card-group">
-        <div class="card" style="width:400px" id="card4">
-          <a href="publicacion_4.html"></a>
-          <img class="card-img-top" src="img/card 4.jpg" alt="Card image" style="width:100%" width="400" height="300" >
-          <div class="card-body">
-            <h4 class="card-title">Spacewhales</h4>
-            <p class="card-text">
-              Artista: RaziellArtt <br>
-              Arte: Digital <br>
-              <br>
-            </p>
-            <div class="card-footer">
-              <small class="text-body-white">Publicado hace 2 horas</small>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width:400px" id="card5">
-          <a href="publicacion_5.html"></a>
-          <img class="card-img-top" src="img/card 5.jpg" alt="Card image" style="width:100%" width="400" height="300" >
-          <div class="card-body">
-            <h4 class="card-title">Water Tower</h4>
-            <p class="card-text">
-              Artista: Evwin7565 <br>
-              Arte: Crochet <br>
-              Tecnica: Amigurumi <br>
-            </p>
-            <div class="card-footer">
-              <small class="text-body-white">Publicado hace 5 horas</small>
-            </div>
-          </div>
-        </div><div class="card" style="width:400px" id="card6">
-          <a href="publicacion_6.html"></a>
-          <img class="card-img-top" src="img/card 6.jpg" alt="Card image" style="width:100%" width="400" height="300" >
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">
-              Artista: Eduardo Rodriguez Calzado <br>
-              Arte: Abstracto <br>
-              Tecnica: Oil Paint
-            </p>
-            <div class="card-footer">
-              <small class="text-body-white">Publicado hace 1 dia</small>
-            </div>
-          </div>
-        </div>
-    </section>
-  
+   
     
+     <!-- Lista de productos -->
+     <ul id="productos">
+      <section>
+          <div class="card-group">
+              <!-- PRODUCTO 1 -->
+              <div class="card" style="width:400px" id="card1">
+                <a href="publicacion_1.html"></a>
+                <img class="card-img-top" src="img/carousel 1.png" alt="Producto 1" style="width:100%" width="400" height="300" >
+                <div class="card-body">
+                  <h6 class="card-text">
+                    Artista: RaziellArtt <br>
+                    Arte: Digital <br>
+                    <br>
+                  </h6>
+                  <div class="card-footer">
+                    <ul style="list-style: none;">
+                      <li>
+                        <h3>Gato 17</h3>
+                        <p>5000</p>
+                        <button class="agregar-carrito"><i class="fa-solid fa-cart-shopping p-2 text-black"></i>
+                          Añadir al carro</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- PRODUCTO 2 -->
+              <div class="card" style="width:400px;" id="card2">
+                <a href="publicacion_2.html"></a>
+                <img class="card-img-top" src="img/carousel 2.jpg" alt="Producto 2" style="width:100%" width="400" height="300" >
+                <div class="card-body">
+                  <h6 class="card-text">
+                    Artista: Josefele77 <br>
+                    Arte: Tradicional <br>
+                    Tecnica: Oil Paint
+                  </h6>
+                  <div class="card-footer">
+                    <ul style="list-style: none;">
+                      <li>
+                        <h3>Water0</h3>
+                        <p>$10000</p>
+                        <button class="agregar-carrito"><i class="fa-solid fa-cart-shopping p-2 text-black"></i>
+                          Añadir al carro</button>
+                      </li>
+                    </ul>
+                    </div>
+                  </div>
+              </div>
+              <!-- PRODUCTO 3 -->
+              <div class="card" style="width:400px" id="card3">
+                      <a href="publicacion_3.html"></a>
+                      <img class="card-img-top" src="img/carousel 3.jpg" alt="Producto 3" style="width:100%" width="400" height="300" >
+                      <div class="card-body">
+                        <h6 class="card-text">
+                          Artista: Evwin7565 <br>
+                          Arte: Crochet <br>
+                          Tecnica: Amigurumi
+                        </h6>
+                        <div class="card-footer">
+                              <ul style="list-style: none;">
+                                  <li>
+                                  <h3>Twinsies</h3>
+                                  <p>$15000</p>
+                                  <button class="agregar-carrito"><i class="fa-solid fa-cart-shopping p-2 text-black"></i>
+                                      Añadir al carro
+                                  </button>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+              </div>
+          </div>
+          
+          <div class="card-group">
+              <!-- PRODUCTO 4 -->
+              <div class="card" style="width:400px" id="card4">
+                <a href="publicacion_4.html"></a>
+                <img class="card-img-top" src="img/card 4.jpg" alt="Producto 4" style="width:100%" width="400" height="300" >
+                <div class="card-body">
+                  <h6 class="card-text">
+                    Artista: RaziellArtt <br>
+                    Arte: Digital <br>
+                    <br>
+                  </h6>
+                  <div class="card-footer">
+                    <ul style="list-style: none;">
+                      <li>
+                        <h3>Spacewhales</h3>
+                        <p>$7000</p>
+                        <button class="agregar-carrito"><i class="fa-solid fa-cart-shopping p-2 text-black"></i>
+                          Añadir al carro</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- PRODUCTO 5 -->
+              <div class="card" style="width:400px;" id="card5">
+                <a href="publicacion_5.html"></a>
+                <img class="card-img-top" src="img/card 5.jpg" alt="Producto 5" style="width:100%" width="400" height="300" >
+                <div class="card-body">
+                  <h6 class="card-text">
+                    Artista: Josefele77 <br>
+                    Arte: Tradicional <br>
+                    Tecnica: Oil Paint
+                  </h6>
+                  <div class="card-footer">
+                    <ul style="list-style: none;">
+                      <li>
+                        <h3>Water Tower</h3>
+                        <p>$40000</p>
+                        <button class="agregar-carrito"><i class="fa-solid fa-cart-shopping p-2 text-black"></i>
+                          Añadir al carro</button>
+                      </li>
+                    </ul>
+                    </div>
+                  </div>
+              </div>
+              <!-- PRODUCTO 6 -->
+              <div class="card" style="width:400px" id="card6">
+                      <a href="publicacion_6.html"></a>
+                      <img class="card-img-top" src="img/card 6.jpg" alt="Producto 6" style="width:100%" width="400" height="300" >
+                      <div class="card-body">
+                        <h6 class="card-text">
+                          Artista: Evwin7565 <br>
+                          Arte: Crochet <br>
+                          Tecnica: Amigurumi
+                        </h6>
+                        <div class="card-footer">
+                              <ul style="list-style: none;">
+                                  <li>
+                                      <h3>John Doe</h3>
+                                      <p>$10000</p>
+                                      <button class="agregar-carrito"><i class="fa-solid fa-cart-shopping p-2 text-black"></i>
+                                          Añadir al carro
+                                      </button>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+              </div>
+          </div>
+      </section>
+  </ul>
+  
+
+   
+    <div class="division-header"></div>
+    
+    <!-- PIE DE PAGINA -->
+    <footer id="fuente-footer" class="row p-5 ancho-total m-0">
+      <div class="col-xs-12 col-md-6 col-lg-3">
+          <h4 class="fw-bold">Ground Zero</h4>
+          <p class="m-0 small text-secondary">Somos un equipo de jovenes dispuestos a subir diferentes tipos de arte.</p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+          <h4 class="fw-bold">Informacion de contacto</h4>
+          <p class="m-0 small text-secondary">Teléfono de contacto: +569 1234 5678</p>
+          <p class="small text-secondary">Dirección: Avenida Providencia #123, Viña del Mar</p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+          <h4 class="fw-bold">Redes sociales</h4>
+          <i id="animacion" class="fa-brands fa-whatsapp pe-1 animacion"></i><i class="fa-brands fa-instagram animacion"></i>
+          <p class="m-0 small text-secondary">WhatsApp: +569 1234 5678</p>
+          <p class="small text-secondary">Instagram: @ground.zero</p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+          <h4 class="fw-bold">Info adicional</h4>
+          <p class="m-0 small text-secondary animacion">Preguntas frecuentes</p>
+          <p class="small text-secondary animacion">Opiniones de clientes</p>
+      </div>
+    </footer>
+
 
     <!-- JS -->
+    <script src="/js/index.js"></script>
+    <!--JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   
-    <script src="js/index.js"></script>
-
-
 </body>
 </html>
