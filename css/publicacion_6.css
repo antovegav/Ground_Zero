@@ -1,7 +1,7 @@
 body{
     background-image: url(/img/background_publicacion.png);
-    /* background-position: center; */
     background-attachment: fixed;
+    color: #fff;
 }
 
 /* CABECERA */
@@ -17,9 +17,15 @@ body{
     color: #000000;
     margin-left: 40px;
 }
-.formulario{
-    padding: auto;
-    margin: 10%;
-    color: #fff;
-    text-align: center; 
+
+h2{
+    text-align: center;
+}
+
+button .compra:hover{
+    background-color:#f0f40e;
+}
+
+a{
+    height: 40px;
 }

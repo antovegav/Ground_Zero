@@ -4,7 +4,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/register\ hd.jpg);
+    background-image: url(/img/background_login.png);
     background-repeat: repeat-x;
     background-attachment: fixed;
     background-position: center;
@@ -36,8 +36,8 @@ h5{
     margin-left: 40px;
 }
 
-/* ANIMACION DE REGISTER */
-#ingresos{
+/* ANIMACION DE REGISTER V.1*/
+/* #ingresos{
     display: flex;
     justify-content: center center;
     margin-top: 25px;
@@ -67,10 +67,71 @@ h5{
 .login{
     color: #3ecc02fe;
     font-weight: bold;
+} */
+
+/* FORMULARIO V.3 */
+
+#container{
+    background: blur;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    font-family: 'Comfortaa',sans-serif;
+    font-size:18px;
+    margin: 120px auto 0 auto;
+    padding: 30px;
+    width: 350px;
 }
 
+#container:hover{
+    background-color: rgba(0, 0, 0, 0.725);
+    box-shadow: 0 0 10px #e4421d, 0 0 40px #2c110ad6,
+    0 0 80px #e4421d;
+}
+
+.campo{
+    border: solid 4px #d13c06d1;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 35px;
+    width: 300px;
+}
+
+.boton{
+    background: #000000d1;
+    border:solid 0;
+    color: #fff;
+    padding: 10px;
+}
+
+.boton:hover{
+    background: #e4421d;
+    box-shadow: 0 0 10px #e4421d, 0 0 40px #e4421d,
+    0 0 80px #e4421d;
+    
+}
+
+.errores{
+    background: red;
+    box-shadow: 0 0 10px rgba(0,0,0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -80px;
+    margin-left: 340px;
+    padding: 10px;
+    position: absolute;
+}
+
+.login{
+    color: #ff0000fe;
+    font-weight: bold;
+    
+}
+
+
 /* ANIMACION DE BOTON */
-.btn-neon{
+/* .btn-neon{
     position:sticky;
     display: inline-block;
     padding: 5px 20px;
@@ -85,12 +146,10 @@ h5{
 }
 
 @keyframes mymove {
-    /* 1% {color: white} */
     30% {color: rgb(207, 2, 2)}
     50% {color: rgb(255, 136, 0);}
     70% {color: green}
     80% {color: rgb(246, 255, 0);}
-    /* 100% {color: black} */
   }
 
 .btn-neon:hover{
@@ -158,4 +217,4 @@ h5{
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
-}
+} */
